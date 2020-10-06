@@ -1,0 +1,14 @@
+:host {
+    display: table-row;
+}
+
+.delete_button {
+    border-radius: 7px;
+}
+
+.delete_button:hover {
+    transition-duration: 0.4s;
+    background-color: #be3e3e;
+    color: rgb(248, 246, 246);
+    
+}

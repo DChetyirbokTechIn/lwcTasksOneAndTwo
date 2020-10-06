@@ -1,0 +1,17 @@
+<template>
+    <!-- <div class="slds-truncate" title="Name">First Name</div> -->
+    <td>{row.firstName}</td>
+    <td>{row.lastName}</td>
+    <td>{row.email}</td>
+    <td>
+        <a data-id={row.accountId} onclick={accountClickHandler}>{row.accountName}</a>
+    </td>
+    <td>{row.mobilePhone}</td>
+    <td>{row.createdDate}</td>
+    <td>
+        <button class="slds-button_neutral delete_button" onclick={deleteHadlerClick}>Delete</button>
+    </td>
+
+    <c-delete-modal-window contact-id={row.id}></c-delete-modal-window>
+
+</template>

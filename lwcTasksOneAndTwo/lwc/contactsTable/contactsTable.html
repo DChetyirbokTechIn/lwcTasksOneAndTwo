@@ -1,0 +1,21 @@
+<template>
+    <table class="slds-table slds-table_cell-buffer slds-table_bordered table">
+        <thead>
+            <tr class="slds-line-height_reset table_header pointer">
+                <th scope="col">First Name</th>
+                <th scope="col">Last Name</th>
+                <th scope="col">Email</th>
+                <th scope="col">Account Name</th>
+                <th scope="col">Mobile Phone</th>
+                <th scope="col">Created Date</th>
+                <th scope="col">Delete</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <template for:each={wrapContacts} for:item="wrapContact">
+                <c-contact-row key={wrapContact.Id} row={wrapContact} onshowdeletemodal={showHideModal}></c-contact-row>
+            </template>
+        </tbody>
+    </table>
+</template>

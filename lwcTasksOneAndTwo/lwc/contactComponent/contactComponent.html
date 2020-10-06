@@ -1,0 +1,21 @@
+<template>
+    <div class="slds-grid">
+        <div class="slds-col slds-size_1-of-6"></div>
+
+        <div class="slds-col slds-size_4-of-6">
+            <div class="slds-grid slds-grid_vertical-align-end slds-grid_align-spread">
+                <c-search-input></c-search-input>
+
+                <lightning-button variant="brand" label="New" title="New" onclick={newButtonClickHandle}
+                    icon-name="utility:adduser" icon-position="right" class="slds-var-m-bottom_small">
+                </lightning-button>
+            </div>
+
+            <c-contacts-table></c-contacts-table>
+        </div>
+
+        <div class="slds-col slds-size_1-of-6"></div>
+    </div>
+
+    <c-create-modal-window></c-create-modal-window>
+</template>
